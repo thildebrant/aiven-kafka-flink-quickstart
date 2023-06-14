@@ -5,7 +5,7 @@ First, install the dependency:
 ```
 pip install kafka-python
 ```
-Next, create a kafka cluster following the [getting started guide](https://docs.aiven.io/docs/products/kafka/getting-started), take note of the bootstrap server URL and port, and download the required cert files into the same directory as the ETH-producer.py script.
+Next, create a kafka cluster following the [getting started guide](https://docs.aiven.io/docs/products/kafka/getting-started), take note of the bootstrap server URL and port, and download the required cert files into the same directory as the `ETH-producer.py` script.
 
 The producer script queries the Coinbase public spot price API and receives a json file containing
 ```
