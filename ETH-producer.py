@@ -10,9 +10,9 @@ url = 'https://api.coinbase.com/v2/prices/eth-usd/spot'
 
 # Producing as JSON
 producer = KafkaProducer(
- bootstrap_servers=f"kafka-303170d-thildebrant-2fb1.aivencloud.com:13628",
+ bootstrap_servers=f"", # insert your server URL and port
  security_protocol="SSL",
- ssl_cafile="./ca.pem",
+ ssl_cafile="./ca.pem", # download from the Aiven service page
  ssl_certfile="./service.cert",
  ssl_keyfile="./service.key",
  value_serializer=lambda v: json.dumps(v).encode('ascii')
